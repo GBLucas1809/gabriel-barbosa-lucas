@@ -5,6 +5,8 @@ const concursoController = require('../controllers/concurso');
 
 //criando as rotas da API
 router.get('/concursos', concursoController.listConcursos);
+router.get('/concursos/:id', concursoController.getConcurso);
+router.post('/concursos', concursoController.createConcurso);
 
 
 
